@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Ephesis', serif;
+      background: #111;
+      color: #eca1ff;
+      overflow-x: hidden;
+    }
+
+        /* --- INTRO SCREEN (IMAGE + TRANSLATIONS) --- */
+    #intro-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('bg.jpg') center/cover no-repeat;
+      transition: opacity 1.5s ease;
+    }
+
+    /* Video background styling */
+    #bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55; /* Darkens video so text is easy to read */
+    }
+
+    /* Text overlay in intro */
+        /* Text overlay in intro */
+    .intro-text {
+      position: relative;
+      z-index: 10;
+      font-family: 'Ephesis', cursive;
+      font-size: 3.5rem;
+      color: #DF1A42;
+      font-weight: 300;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      animation: fadeInOut 3s linear forwards;
+    }
+
+    /* Animation sequence for switching greetings */
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(10px); }
+      20% { opacity: 1; transform: translateY(0); }
+      80% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+
+    /* --- MAIN SCROLLABLE CONTENT (LOVE LETTERS) --- */
+    #main-content {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #1d030d 0%, #3a001a 50%, #110008 100%);
+      padding: 40px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-title {
+      font-size: 2rem;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #ffb3c1;
+      font-style: italic;
+    }
+
+    /* PDF/Article style card container */
+    .letter-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px 24px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .letter-card h2 {
+      font-size: 1.3rem;
+      color: #ff758f;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(255, 117, 143, 0.3);
+      padding-bottom: 8px;
+    }
+
+        .letter-card p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem; /* Slightly larger and easier to read */
+      line-height: 1.8;
+      color: #f1f1f1;
+      white-space: pre-line; /* Preserves line breaks when you type */
+    }
+
+    .footer-heart {
+      margin-top: 20px;
+      font-size: 2rem;
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INTRO SCREEN WITH VIDEO AND FADING TEXT -->
+  <div id="intro-screen">
+    <!-- Replace 'intro-video.mp4' with your video file link -->
+    <video id="bg-video" autoplay muted playsinline>
+      <source src="intro-video.mp4" type="video/mp4">
+    </video>
+    
+    <div id="greeting-text" class="intro-text">Welcome my love</div>
+  </div>
+
+  <!-- SCROLLABLE LOVE LETTERS PAGE -->
+  <div id="main-content">
+    
+    <h1 class="header-title">💜Sevigli İsmail, Aşkım ve bebeğim 🤍</h1>
+
+    <!-- LETTER 1 -->
+    <div class="letter-card">
+      <h2>Letter #1: 9971 km</h2>
+      <p>
+        Sevgili İsmail, 
+        
+        Mesafe geçici. Acı verici ama geçici. Kalplerimiz henüz yüz yüze buluşamamış olsa da sevgimiz yine de birbirimize ulaşmayı başardı. Sevgimiz okyanusları aşarak çok uzaklara yol aldı. Ve hayatımda olduğun için sana minnettarım.
+
+        Aramızda 9971 km olsa bile sevgim sonsuza dek sana ulaşacak. 🤍💜
+      </p>
+    </div>
+
+    <!-- LETTER 2 -->
+    <div class="letter-card">
+      <h2>Letter #2: Neden benim için önemlisin</h2>
+      <p>
+        Aşkım, dinle
+        
+        Benim için çok önemlisin çünkü çok özelsin, çok farklısın ve çok gerçeksin. Kocan olmak hem bir meydan okuma hem bir hikâye hem de bir ödül gibi hissettiriyor. Bana karşı en gerçek olan kişi sensin. Senden, okula gittiğim 14 yıl boyunca öğrendiğimden çok daha fazlasını öğreniyorum. Birbirimizden öğreneceğimiz o kadar çok şey var ki bu hem heyecan verici hem de korkutucu. İşte bu yüzden her şey bu kadar eşsiz ve alışılmadık.
+
+      </p>
+    </div>
+
+    <!-- LETTER 3 -->
+    <div class="letter-card">
+      <h2>Meyve</h2>
+      <p>
+        ÇOK dürüst olmak gerekirse, sen hem baş döndürücü hem de eşsizsin. Nadir bulunan, özel, çok tatlı ama aynı zamanda biraz korkutucu olan, üstelik dünyanın en güzel meyvesi olan bir meyve gibisin. İşte sen o meyvesin.
+
+Bana o kadar çok şey hissettiriyorsun ki. Beni mutlu ediyorsun, strese sokuyorsun, iyileştiriyorsun. Sevgini o kadar yoğun ve etkili bir şekilde gösteriyorsun ki, bu bazen çok güzel olduğu kadar çok da acı verebiliyor. Ama insan kendini bundan alıkoyamıyor. Bu, bağımlılık gibi.
+
+İşte bu da neden senden ayrılamadığımın ve asla ayrılmak istemediğimin bir başka sebebi. Senin büyün altındayım. Hangi büyüyü yapıyorsan yap, beni kendine çeken o manyetik gücün gerçekten çok etkili.
+
+Sen o eşsiz, tatlı, insanı büyüleyen ama aynı zamanda korkutan, güçlü ve nadir bulunan meyvesin. Ve ben yalnızca seni istiyorum. 
+      </p>
+    </div>
+
+    <div class="footer-heart">🤍💜</div>
+  </div>
+
+  <!-- AUTOMATION JAVASCRIPT FOR INTRO SWITCHING -->
+  <script>
+    const greetings = [
+      "Welcome my love",
+      "Hoş geldin aşkım",
+      "Bienvenido mi amor"
+    ];
+
+    let index = 0;
+    const textElement = document.getElementById('greeting-text');
+    const introScreen = document.getElementById('intro-screen');
+
+    function playGreetings() {
+      if (index < greetings.length) {
+        textElement.textContent = greetings[index];
+        textElement.style.animation = 'none';
+        // Trigger reflow to restart CSS animation
+        void textElement.offsetWidth; 
+        textElement.style.animation = 'fadeInOut 2.5s linear forwards';
+        
+        index++;
+        setTimeout(playGreetings, 3000); // Wait 1.5 seconds per translation
+      } else {
+        // Fade out intro video screen
+        introScreen.style.opacity = '0';
+        setTimeout(() => {
+          introScreen.style.display = 'none'; // Completely hide intro after fade
+        }, 1500);
+      }
+    }
+
+    // Start text animation sequence when page loads
+    window.onload = playGreetings;
+  </script>
+
+</body>
+</html>
+
